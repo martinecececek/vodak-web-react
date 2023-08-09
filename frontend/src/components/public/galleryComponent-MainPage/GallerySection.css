@@ -1,0 +1,80 @@
+/* Add this to your GallerySection.css file */
+
+/* Default styles */
+.section-gallery {
+  margin-bottom: 40px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1100px; /* Set the maximum width to 1100px */
+  margin-left: auto; /* Center the section horizontally */
+  margin-right: auto; /* Center the section horizontally */
+}
+
+.section-gallery h2 {
+  color: #007bff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-gallery img {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.1);
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1100px) {
+  .image-gallery img {
+    width: calc(33.33% - 20px); /* Adjust image width for three images in a row */
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .image-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-gallery {
+    padding: 10px;
+  }
+
+  .image-gallery img {
+    margin: 5px;
+  }
+}

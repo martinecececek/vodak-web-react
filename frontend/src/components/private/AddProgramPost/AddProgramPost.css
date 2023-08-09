@@ -1,0 +1,193 @@
+/* Main container for the gallery post creator */
+.program-post-creator {
+   font-family: Arial, sans-serif;
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+/* Styles for the form elements */
+.form-wrapper {
+   list-style: none;
+   padding: 0;
+}
+
+.form-item {
+   margin-bottom: 20px;
+}
+
+form label {
+   display: block;
+   font-weight: bold;
+}
+.date-wrapper {
+   margin-left: -40px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="date"] {
+   width: 100%;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+form textarea {
+   height: 100px;
+}
+
+.red-border {
+   border-color: red;
+}
+
+/* Styles for image upload */
+.image-upload-container {
+   margin-top: 20px;
+}
+
+.image-upload-label {
+   display: block;
+   cursor: pointer;
+   font-weight: bold;
+}
+
+.image-upload-input {
+   display: none;
+}
+
+.image-preview-container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.image-preview {
+   position: relative;
+   width: 120px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+.image-preview img {
+   width: 100%;
+   height: auto;
+}
+
+.image-preview button {
+   position: absolute;
+   top: 0;
+   right: 0;
+   background: rgba(255, 255, 255, 0.7);
+   border: none;
+   cursor: pointer;
+   font-weight: bold;
+   color: red;
+   padding: 4px;
+}
+
+/* Styles for the submit button */
+.submit-button-container {
+   margin-top: 20px;
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.btn-item {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Styles for the create button */
+.submit-button-container button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Styles for the back button */
+.back-btn button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+#back{
+  margin-top: 20px;
+}
+/* Styles for the button on hover */
+button:hover {
+  opacity: 0.9;
+}
+
+/* Styles for the button on active/pressed state */
+button:active {
+  transform: translateY(1px);
+}
+
+/* Styles for the success message */
+.success-message {
+   margin-top: 10px;
+   color: green;
+   font-weight: bold;
+}
+
+/* Styles for the list of created posts */
+.created-post {
+   margin-top: 30px;
+}
+
+.created-post h3 {
+   margin-bottom: 5px;
+}
+
+.created-post p {
+   margin: 5px 0;
+}
+
+.created-images {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 10px;
+}
+
+.created-image {
+   position: relative;
+   width: 120px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+.created-image img {
+   width: 100%;
+   height: auto;
+}
+
+.download-btn {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-size: 12px;
+   padding: 4px 8px;
+   border-radius: 4px;
+}

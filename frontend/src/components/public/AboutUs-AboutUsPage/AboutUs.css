@@ -1,0 +1,38 @@
+/* About Us Section Styles */
+.about-us {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+ul {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+li {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Add any other custom styles you'd like to apply to the component */

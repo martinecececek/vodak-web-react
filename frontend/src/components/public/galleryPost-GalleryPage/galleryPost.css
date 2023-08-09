@@ -1,0 +1,97 @@
+/* CSS for Event component */
+.event {
+   max-width: 1100px;
+   margin: 20px auto; /* Center the event container horizontally and add margin-top */
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   background-color: #fff;
+   outline: 2px solid #2196f3;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; /* Center the event container vertically */
+   overflow: hidden; /* Hide overflowing content */
+   transition: max-height 0.5s ease; /* Add a transition for smooth expansion */
+}
+
+.gallery-title {
+   margin-top: 100px;
+}
+
+.gallery-separator {
+   margin-bottom: 600px; /* Added 'px' unit to margin-bottom value */
+}
+
+.event.expanded {
+   max-height: none; /* Remove max-height when expanded to fit all images */
+}
+
+.event img {
+   width: 300px;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   transition: transform 0.3s ease; /* Added a transition for smooth scaling */
+}
+
+/* Additional CSS class for smaller images when expanded */
+.event.expanded .picture-container .image-container img.small-image {
+   width: 200px;
+   height: 133px;
+}
+
+/* CSS for each image container */
+.picture-container .image-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center; /* Center the image vertically */
+   margin: 8px; /* Add spacing between images */
+}
+
+/* CSS for the container holding the images and buttons */
+.picture-container {
+   display: flex;
+   justify-content: center; /* Center the images and button horizontally */
+   flex-wrap: wrap; /* Wrap the images if necessary */
+   max-height: 350px; /* Set a maximum height to contain only 3 images */
+   overflow: hidden;
+}
+
+/* CSS for each image */
+.picture-container .image-container img:hover {
+   transform: scale(1.1); /* Slightly scale up the image on hover */
+}
+
+/* CSS for the container holding the buttons */
+.button-container {
+   display: flex;
+   justify-content: center; /* Center the button horizontally */
+   margin-top: 10px; /* Add spacing between images and buttons */
+}
+
+/* CSS for each button */
+.button-container button {
+   padding: 8px 16px;
+   border: none;
+   border-radius: 4px;
+   background-color: #2196f3;
+   color: black;
+   cursor: pointer;
+}
+
+/* CSS for event details meta */
+.event-details-meta-wrapper {
+   list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 0;
+}
+
+.event-details-meta-item {
+   margin-right: 20px;
+}

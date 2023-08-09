@@ -1,0 +1,37 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+   box-sizing: border-box;
+}
+
+:root {
+   --mainColor: #293846;
+   --mainColorLighter: #445e77;
+   --secondaryColor: red;
+   --textColorLight: #fff;
+   --textColorDark: black;
+}
+
+.contact-info {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+}
+
+.contact-box a{
+  text-decoration: none!important;
+  color: var(--textColorDark  )
+}
+
+.contact-box {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   outline: 1px solid black;
+   padding: 20px;
+   border-radius: 16px;
+
+}
